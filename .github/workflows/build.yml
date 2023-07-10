@@ -10,7 +10,7 @@ jobs:
     - name: Cache
       uses: actions/cache@v3.0.8 
       with:
-        path: ~/.npm 
+        path: ~/.nmp 
         key: buildCache
     - run: nmp ci
     - run: nmp test -- --coverage

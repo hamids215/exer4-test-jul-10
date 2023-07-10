@@ -10,10 +10,10 @@ jobs:
     - name: Cache
       uses: actions/cache@v3.0.8 
       with:
-        path: ~/.nmp 
+        path: ~/.npm 
         key: buildCache
-    - run: nmp ci
-    - run: nmp test -- --coverage
+    - run: npm ci
+    - run: npm test -- --coverage
       env:
         CI: true
     - name: Upload code coverage
